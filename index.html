@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Hoor Book Cafe — Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div class="brand-mark">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#D9A557"
+          stroke-width="1.4"
+        >
+          <path d="M4 4h9a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3V4z" />
+          <path d="M16 4h4v16h-4" />
+          <path d="M7 8h6M7 11h6" />
+        </svg>
+      </div>
+      <h1 class="display">Hoor <em>Book Cafe</em></h1>
+      <p>
+        Coffee, food, and a quiet corner to read. Tap anything to add it to your
+        order.
+      </p>
+      <div class="header__meta">
+        <span>7:00 – 21:00</span>
+        <span>Dine-in &amp; takeaway</span>
+      </div>
+      <div class="tap-hint">Tap an item to add it →</div>
+    </header>
+
+    <main>
+      <section class="menu__section" id="coffee">
+        <div class="menu__head">
+          <span class="menu__index mono">01</span>
+          <h2>Coffee</h2>
+        </div>
+
+        <button class="item" data-name="Espresso" data-price="3.25">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Espresso</span>
+            <span class="item__desc">Double shot, straight up.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$3.25</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="Cappuccino" data-price="4.75">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Cappuccino</span>
+            <span class="item__desc">Espresso, steamed milk, deep foam.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$4.75</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="Flat White" data-price="5.00">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Flat White</span>
+            <span class="item__desc">Ristretto pull, microfoam.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$5.00</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+        <button class="item" data-name="Iced Latte" data-price="5.25">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Iced Latte</span>
+            <span class="item__desc">Served over hand-cracked ice.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$5.25</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+      </section>
+
+      <section class="menu__section" id="pizza">
+        <div class="menu__head">
+          <span class="menu__index mono">02</span>
+          <h2>Pizza</h2>
+        </div>
+
+        <button class="item" data-name="Margherita Pizza" data-price="11.50">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Margherita</span>
+            <span class="item__desc"
+              >San Marzano tomato, fior di latte, basil.</span
+            >
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$11.50</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button
+          class="item"
+          data-name="Mushroom & Truffle Pizza"
+          data-price="13.75"
+        >
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Mushroom &amp; Truffle</span>
+            <span class="item__desc"
+              >Wild mushroom, mozzarella, truffle oil.</span
+            >
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$13.75</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="Pepperoni Pizza" data-price="12.50">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Pepperoni</span>
+            <span class="item__desc">Classic, spicy cup pepperoni.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$12.50</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+      </section>
+
+      <section class="menu__section" id="pasta">
+        <div class="menu__head">
+          <span class="menu__index mono">03</span>
+          <h2>Pasta</h2>
+        </div>
+
+        <button class="item" data-name="Cacio e Pepe" data-price="12.00">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Cacio e Pepe</span>
+            <span class="item__desc">Pecorino, cracked black pepper.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$12.00</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button
+          class="item"
+          data-name="Mushroom Tagliatelle"
+          data-price="13.25"
+        >
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Mushroom Tagliatelle</span>
+            <span class="item__desc"
+              >Wild mushroom cream, thyme, parmesan.</span
+            >
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$13.25</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="Tomato Basil Penne" data-price="11.00">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Tomato Basil Penne</span>
+            <span class="item__desc">Slow-cooked tomato, fresh basil.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$11.00</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+      </section>
+
+      <section class="menu__section" id="pastries">
+        <div class="menu__head">
+          <span class="menu__index mono">04</span>
+          <h2>Pastries</h2>
+        </div>
+
+        <button class="item" data-name="Almond Croissant" data-price="4.50">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Almond Croissant</span>
+            <span class="item__desc">Baked fresh each morning.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$4.50</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+        <button class="item" data-name="Cardamom Bun" data-price="4.25">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Cardamom Bun</span>
+            <span class="item__desc">Soft, spiced, lightly glazed.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$4.25</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="Olive Oil Cake" data-price="4.75">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">Olive Oil Cake</span>
+            <span class="item__desc">Citrus zest, flaky salt.</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">$4.75</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+      </section>
+    </main>
+
+    <!-- Floating cart button -->
+    <button class="cart-fab" id="cartFab">
+      <span class="cart-fab__label"
+        ><span class="cart-fab__badge" id="cartCount">0</span> View order</span
+      >
+      <span class="cart-fab__total mono" id="cartFabTotal">$0.00</span>
+    </button>
+
+    <!-- Order drawer -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div
+      class="drawer"
+      id="drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Your order"
+    >
+      <div class="drawer__handle"></div>
+      <div class="drawer__head">
+        <h2>Your Order</h2>
+        <button class="drawer__close" id="drawerClose" aria-label="Close">
+          &times;
+        </button>
+      </div>
+      <div class="drawer__list" id="drawerList">
+        <div class="drawer__empty">
+          No items yet. Tap something from the menu to start your order.
+        </div>
+      </div>
+      <div class="drawer__footer">
+        <div class="drawer__total">
+          <span>Total</span><strong class="mono" id="drawerTotal">$0.00</strong>
+        </div>
+        <button class="btn btn--primary" id="placeOrderBtn">Place order</button>
+        <button class="btn btn--ghost" id="clearOrderBtn">Clear order</button>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
