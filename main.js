@@ -10,7 +10,7 @@ const drawerTotal = document.getElementById("drawerTotal");
 const toast = document.getElementById("toast");
 
 function money(n) {
-  return "$" + n.toFixed(2);
+  return n + "T";
 }
 
 function totals() {
@@ -39,9 +39,10 @@ function renderFab() {
 
 function renderDrawer() {
   const keys = Object.keys(order);
+
   if (keys.length === 0) {
     drawerList.innerHTML =
-      '<div class="drawer__empty">No items yet. Tap something from the menu to start your order.</div>';
+      '<div class="drawer__empty">سفارشی موجود نیست</div>';
   } else {
     drawerList.innerHTML = keys
       .map((name) => {
@@ -50,7 +51,6 @@ function renderDrawer() {
           <div class="order-row" data-name="${name}">
             <div class="order-row__info">
               <div class="order-row__name">${name}</div>
-              <div class="order-row__unit">${money(it.price)} each</div>
             </div>
             <div class="qty">
               <button class="qty-minus" aria-label="Remove one">−</button>
@@ -81,10 +81,14 @@ function addItem(name, price, sourceEl) {
 document.querySelectorAll(".item").forEach((btn) => {
   btn.addEventListener("click", () => {
     const name = btn.dataset.name;
+
     const price = parseFloat(btn.dataset.price);
     addItem(name, price, btn);
   });
 });
+
+//
+//
 
 drawerList.addEventListener("click", (e) => {
   const row = e.target.closest(".order-row");
@@ -99,6 +103,9 @@ drawerList.addEventListener("click", (e) => {
   renderDrawer();
 });
 
+//
+//
+
 function openDrawer() {
   drawer.classList.add("open");
   drawerBackdrop.classList.add("open");
@@ -112,26 +119,32 @@ cartFab.addEventListener("click", openDrawer);
 document.getElementById("drawerClose").addEventListener("click", closeDrawer);
 drawerBackdrop.addEventListener("click", closeDrawer);
 
+//
+//
+
 document.getElementById("clearOrderBtn").addEventListener("click", () => {
   for (const key in order) delete order[key];
   renderDrawer();
 });
 
-document.getElementById("placeOrderBtn").addEventListener("click", () => {
-  const { count } = totals();
-  if (count === 0) {
-    showToast("Your order is empty");
-    return;
-  }
-  showToast("Order placed — thank you!");
-  closeDrawer();
-  setTimeout(() => {
-    for (const key in order) delete order[key];
-    renderDrawer();
-  }, 400);
-});
+// document.getElementById("placeOrderBtn").addEventListener("click", () => {
+//   const { count } = totals();
+//   if (count === 0) {
+//     showToast("Your order is empty");
+//     return;
+//   }
+//   showToast("Order placed — thank you!");
+//   closeDrawer();
+//   setTimeout(() => {
+//     for (const key in order) delete order[key];
+//     renderDrawer();
+//   }, 400);
+// });
 
 // Reveal menu sections on scroll
+
+//
+
 const sections = document.querySelectorAll(".menu__section");
 const observer = new IntersectionObserver(
   (entries) => {
