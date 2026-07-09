@@ -12,84 +12,68 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div class="brand-mark">
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#D9A557"
-          stroke-width="1.4"
-        >
-          <path d="M4 4h9a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3V4z" />
-          <path d="M16 4h4v16h-4" />
-          <path d="M7 8h6M7 11h6" />
-        </svg>
+        <img src="./logo.png" alt="" />
       </div>
-      <h1 class="display">Hoor <em>Book Cafe</em></h1>
-      <p>
-        Coffee, food, and a quiet corner to read. Tap anything to add it to your
-        order.
-      </p>
+      <h1 class="display">کافه کتاب <em>هور</em></h1>
+      <p>قهوه، غذا و محیطی دنج برای مطالعه</p>
       <div class="header__meta">
-        <span>7:00 – 21:00</span>
-        <span>Dine-in &amp; takeaway</span>
+        <span>7:00 a.m – 11:30 p.m</span>
+        <span>سرو در محل و بیرون‌بر</span>
       </div>
-      <div class="tap-hint">Tap an item to add it →</div>
+      <div class="tap-hint">برای افزودن روی آن ضربه بزنید →</div>
     </header>
 
     <main>
       <section class="menu__section" id="coffee">
         <div class="menu__head">
           <span class="menu__index mono">01</span>
-          <h2>Coffee</h2>
+          <h2>قهوه</h2>
         </div>
 
-        <button class="item" data-name="Espresso" data-price="3.25">
+        <button class="item" data-name="اسپرسو" data-price="220">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Espresso</span>
-            <span class="item__desc">Double shot, straight up.</span>
+            <span class="item__name">اسپرسو</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$3.25</span>
+            <span class="item__price mono">220T</span>
             <span class="item__add">+</span>
           </span>
         </button>
 
-        <button class="item" data-name="Cappuccino" data-price="4.75">
+        <button class="item" data-name="کاپوچینو" data-price="200">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Cappuccino</span>
-            <span class="item__desc">Espresso, steamed milk, deep foam.</span>
+            <span class="item__name">کاپوچینو</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$4.75</span>
+            <span class="item__price mono">200T</span>
             <span class="item__add">+</span>
           </span>
         </button>
 
-        <button class="item" data-name="Flat White" data-price="5.00">
+        <button class="item" data-name="لاته" data-price="250">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Flat White</span>
-            <span class="item__desc">Ristretto pull, microfoam.</span>
+            <span class="item__name">لاته</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$5.00</span>
+            <span class="item__price mono">250T</span>
             <span class="item__add">+</span>
           </span>
         </button>
-        <button class="item" data-name="Iced Latte" data-price="5.25">
+        <button class="item" data-name="آیس لاته" data-price="220">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Iced Latte</span>
-            <span class="item__desc">Served over hand-cracked ice.</span>
+            <span class="item__name">آیس لاته</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$5.25</span>
+            <span class="item__price mono">220T</span>
             <span class="item__add">+</span>
           </span>
         </button>
@@ -98,49 +82,38 @@
       <section class="menu__section" id="pizza">
         <div class="menu__head">
           <span class="menu__index mono">02</span>
-          <h2>Pizza</h2>
+          <h2>سیب زمینی</h2>
         </div>
 
-        <button class="item" data-name="Margherita Pizza" data-price="11.50">
+        <button class="item" data-name="سیب زمینی پنیری" data-price="380">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Margherita</span>
-            <span class="item__desc"
-              >San Marzano tomato, fior di latte, basil.</span
-            >
+            <span class="item__name">پنیری</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$11.50</span>
+            <span class="item__price mono">380T</span>
             <span class="item__add">+</span>
           </span>
         </button>
 
-        <button
-          class="item"
-          data-name="Mushroom & Truffle Pizza"
-          data-price="13.75"
-        >
+        <button class="item" data-name="سیب زمینی مخلوط" data-price="380">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Mushroom &amp; Truffle</span>
-            <span class="item__desc"
-              >Wild mushroom, mozzarella, truffle oil.</span
-            >
+            <span class="item__name">مخلوط</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$13.75</span>
+            <span class="item__price mono">380T</span>
             <span class="item__add">+</span>
           </span>
         </button>
 
-        <button class="item" data-name="Pepperoni Pizza" data-price="12.50">
+        <button class="item" data-name="سیب زمینی مخصوص" data-price="400">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Pepperoni</span>
-            <span class="item__desc">Classic, spicy cup pepperoni.</span>
+            <span class="item__name">مخصوص</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$12.50</span>
+            <span class="item__price mono">400T</span>
             <span class="item__add">+</span>
           </span>
         </button>
@@ -149,47 +122,16 @@
       <section class="menu__section" id="pasta">
         <div class="menu__head">
           <span class="menu__index mono">03</span>
-          <h2>Pasta</h2>
+          <h2>پاستا</h2>
         </div>
 
-        <button class="item" data-name="Cacio e Pepe" data-price="12.00">
+        <button class="item" data-name="پاستا چیکن آلفردو" data-price="420">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Cacio e Pepe</span>
-            <span class="item__desc">Pecorino, cracked black pepper.</span>
+            <span class="item__name">چیکن آلفردو</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$12.00</span>
-            <span class="item__add">+</span>
-          </span>
-        </button>
-
-        <button
-          class="item"
-          data-name="Mushroom Tagliatelle"
-          data-price="13.25"
-        >
-          <span class="item__flash"></span>
-          <span class="item__info">
-            <span class="item__name">Mushroom Tagliatelle</span>
-            <span class="item__desc"
-              >Wild mushroom cream, thyme, parmesan.</span
-            >
-          </span>
-          <span class="item__right">
-            <span class="item__price mono">$13.25</span>
-            <span class="item__add">+</span>
-          </span>
-        </button>
-
-        <button class="item" data-name="Tomato Basil Penne" data-price="11.00">
-          <span class="item__flash"></span>
-          <span class="item__info">
-            <span class="item__name">Tomato Basil Penne</span>
-            <span class="item__desc">Slow-cooked tomato, fresh basil.</span>
-          </span>
-          <span class="item__right">
-            <span class="item__price mono">$11.00</span>
+            <span class="item__price mono">420T</span>
             <span class="item__add">+</span>
           </span>
         </button>
@@ -198,40 +140,48 @@
       <section class="menu__section" id="pastries">
         <div class="menu__head">
           <span class="menu__index mono">04</span>
-          <h2>Pastries</h2>
+          <h2>نوشیدنی خنک</h2>
         </div>
 
-        <button class="item" data-name="Almond Croissant" data-price="4.50">
+        <button class="item" data-name="موهیتو" data-price="200">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Almond Croissant</span>
-            <span class="item__desc">Baked fresh each morning.</span>
+            <span class="item__name">موهیتو</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$4.50</span>
+            <span class="item__price mono">200T</span>
             <span class="item__add">+</span>
           </span>
         </button>
-        <button class="item" data-name="Cardamom Bun" data-price="4.25">
+        <button class="item" data-name="لیموناد" data-price="180">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Cardamom Bun</span>
-            <span class="item__desc">Soft, spiced, lightly glazed.</span>
+            <span class="item__name">لیموناد</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$4.25</span>
+            <span class="item__price mono">180T</span>
             <span class="item__add">+</span>
           </span>
         </button>
 
-        <button class="item" data-name="Olive Oil Cake" data-price="4.75">
+        <button class="item" data-name="شیک شکلات" data-price="320">
           <span class="item__flash"></span>
           <span class="item__info">
-            <span class="item__name">Olive Oil Cake</span>
-            <span class="item__desc">Citrus zest, flaky salt.</span>
+            <span class="item__name">شیک شکلات</span>
           </span>
           <span class="item__right">
-            <span class="item__price mono">$4.75</span>
+            <span class="item__price mono">320T</span>
+            <span class="item__add">+</span>
+          </span>
+        </button>
+
+        <button class="item" data-name="شیک وانیل" data-price="200">
+          <span class="item__flash"></span>
+          <span class="item__info">
+            <span class="item__name">شیک وانیل</span>
+          </span>
+          <span class="item__right">
+            <span class="item__price mono">200T</span>
             <span class="item__add">+</span>
           </span>
         </button>
@@ -241,9 +191,9 @@
     <!-- Floating cart button -->
     <button class="cart-fab" id="cartFab">
       <span class="cart-fab__label"
-        ><span class="cart-fab__badge" id="cartCount">0</span> View order</span
+        ><span class="cart-fab__badge" id="cartCount">0</span>&nbsp;مشاهده سفارش</span
       >
-      <span class="cart-fab__total mono" id="cartFabTotal">$0.00</span>
+      <span class="cart-fab__total mono" id="cartFabTotal">0T</span>
     </button>
 
     <!-- Order drawer -->
@@ -257,22 +207,22 @@
     >
       <div class="drawer__handle"></div>
       <div class="drawer__head">
-        <h2>Your Order</h2>
+        <h2>سفارش شما</h2>
         <button class="drawer__close" id="drawerClose" aria-label="Close">
           &times;
         </button>
       </div>
       <div class="drawer__list" id="drawerList">
         <div class="drawer__empty">
-          No items yet. Tap something from the menu to start your order.
+          سفارشی موجود نیست
         </div>
       </div>
       <div class="drawer__footer">
         <div class="drawer__total">
-          <span>Total</span><strong class="mono" id="drawerTotal">$0.00</strong>
+          <span>کل</span><strong class="mono" id="drawerTotal">$0.00</strong>
         </div>
-        <button class="btn btn--primary" id="placeOrderBtn">Place order</button>
-        <button class="btn btn--ghost" id="clearOrderBtn">Clear order</button>
+        <!-- <button class="btn btn--primary" id="placeOrderBtn">Place order</button> -->
+        <button class="btn btn--ghost" id="clearOrderBtn">پاکسازی</button>
       </div>
     </div>
 
