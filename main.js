@@ -41,8 +41,7 @@ function renderDrawer() {
   const keys = Object.keys(order);
 
   if (keys.length === 0) {
-    drawerList.innerHTML =
-      '<div class="drawer__empty">سفارشی موجود نیست</div>';
+    drawerList.innerHTML = '<div class="drawer__empty">سفارشی موجود نیست</div>';
   } else {
     drawerList.innerHTML = keys
       .map((name) => {
@@ -127,24 +126,6 @@ document.getElementById("clearOrderBtn").addEventListener("click", () => {
   renderDrawer();
 });
 
-// document.getElementById("placeOrderBtn").addEventListener("click", () => {
-//   const { count } = totals();
-//   if (count === 0) {
-//     showToast("Your order is empty");
-//     return;
-//   }
-//   showToast("Order placed — thank you!");
-//   closeDrawer();
-//   setTimeout(() => {
-//     for (const key in order) delete order[key];
-//     renderDrawer();
-//   }, 400);
-// });
-
-// Reveal menu sections on scroll
-
-//
-
 const sections = document.querySelectorAll(".menu__section");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -160,3 +141,41 @@ const observer = new IntersectionObserver(
 sections.forEach((sec) => observer.observe(sec));
 
 renderFab();
+
+// // //  //  //
+
+const searchBtn1 = document.getElementById("searchBtn1");
+const searchBtn2 = document.getElementById("searchBtn2");
+const searchBtn3 = document.getElementById("searchBtn3");
+const searchBtn4 = document.getElementById("searchBtn4");
+
+const coffee = document.getElementById("coffee");
+const frise = document.getElementById("frise");
+const pasta = document.getElementById("pasta");
+const coldDrinks = document.getElementById("coldDrinks");
+
+searchBtn1.addEventListener("click", () => {
+  coffee.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
+});
+
+searchBtn2.addEventListener("click", () => {
+  pasta.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
+});
+searchBtn3.addEventListener("click", () => {
+  coldDrinks.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
+});
+searchBtn4.addEventListener("click", () => {
+  frise.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+  });
+});
